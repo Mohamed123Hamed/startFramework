@@ -1,0 +1,22 @@
+.inputForm {
+  border: unset;
+  border-bottom: 1px solid hotpink;
+  border-radius: unset;
+  color: #212529;
+}
+.inputForm:focus {
+  box-shadow: none;
+}
+
+label {
+  margin-bottom: 6px;
+  transition: 0.6s top;
+}
+.topChange {
+  top: 40px !important;
+}
+
+button {
+  width: 130px;
+  opacity: 0.6;
+}

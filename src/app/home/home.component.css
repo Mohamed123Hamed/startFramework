@@ -1,0 +1,10 @@
+section {
+  background-color: #1abc9c;
+  color: #fff;
+}
+.header h1::before {
+  background-color: #fff;
+}
+.header h1::after {
+  background-color: #fff;
+}

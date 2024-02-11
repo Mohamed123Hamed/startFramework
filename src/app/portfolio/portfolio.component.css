@@ -1,0 +1,45 @@
+.imgItem {
+  border-radius: 7px;
+}
+.parent {
+  position: relative;
+}
+.overlay i {
+  font-size: 50px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100;
+  width: 100%;
+  /* display: none; */
+  opacity: 0;
+  transition: 0.9s opacity;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent:hover .overlay {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1abc9ce6;
+  height: 100%;
+  opacity: 1;
+}
+
+/*/== //////////////////////////////////// */
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 32%;
+  top: 30%;
+  width: 35%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}

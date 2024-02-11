@@ -1,0 +1,40 @@
+<section>
+  <div class="header">
+    <div class="item-container text-center">
+      <h1>PORTFOLIO COMPONENT</h1>
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+
+  <div class="items my-4">
+    <div class="container">
+      <div class="row g-5">
+        <div
+          class="col-md-4"
+          *ngFor="let item of items"
+          (click)="flag = false; modlImage = item.pathImg"
+        >
+          <div class="parent">
+            <img
+              [src]="item.pathImg"
+              [alt]="item.altImg"
+              class="w-100 imgItem"
+            />
+            <div class="overlay">
+              <i class="fa-solid fa-plus text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- div==================== -->
+  <div
+    (click)="hideItem($event.target, img)"
+    [class.d-none]="flag"
+    class="light-box d-none"
+  >
+    <img #img [src]="modlImage" alt="imssge" class="w-100" />
+  </div>
+</section>

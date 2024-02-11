@@ -1,0 +1,76 @@
+<div class="p-3">
+  <div class="header">
+    <div class="item-container text-center">
+      <h1>CONATCT SECTION</h1>
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+
+  <div class="w-50 mx-auto">
+    <div class="pt-5">
+      <div class="mb-3">
+        <label
+          for="formUserNameInput"
+          class="form-label position-relative top-0"
+          [class.topChange]="!userName.length"
+          >user name :</label
+        >
+        <input
+          [(ngModel)]="userName"
+          type="text"
+          class="form-control inputForm position-relative"
+          id="formUserNameInput"
+          placeholder="enter your user name"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label
+          for="formuserAgeInput"
+          class="form-label position-relative top-0"
+          [class.topChange]="!userAge.length"
+          >user Age :</label
+        >
+        <input
+          [(ngModel)]="userAge"
+          type="text"
+          class="form-control inputForm position-relative"
+          id="formuserAgeInput"
+          placeholder="enter your age"
+        />
+      </div>
+      <div class="mb-3">
+        <label
+          for="formUserEmailInput"
+          class="form-label position-relative top-0"
+          [class.topChange]="!userEmail.length"
+          >user email :</label
+        >
+        <input
+          [(ngModel)]="userEmail"
+          type="email"
+          class="form-control inputForm position-relative"
+          id="formUserEmailInput"
+          placeholder="enter your email"
+        />
+      </div>
+      <div class="mb-3">
+        <label
+          for="formPasswoedInput"
+          class="form-label position-relative top-0"
+          [class.topChange]="!userPassword.length"
+          >user password :</label
+        >
+        <input
+          [(ngModel)]="userPassword"
+          type="password"
+          class="form-control inputForm position-relative"
+          id="formPasswoedInput"
+          placeholder="enter your user password"
+        />
+      </div>
+
+      <button class="btn btn-success py-2 mb-3 mt-2">Send Message</button>
+    </div>
+  </div>
+</div>
